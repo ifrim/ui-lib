@@ -1,0 +1,81 @@
+.ui-modal-backdrop {
+	opacity: 0.4;
+	background-color: var(--color-primary);
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+}
+
+.ui-modal-wrapper {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.ui-modal {
+	--header-bar-height: 24px;
+	--padding: 30px;
+
+	position: relative;
+	pointer-events: all;
+	inline-size: 600px;
+	min-block-size: 200px;
+	background-color: white;
+	border-radius: var(--border-radius);
+	padding-block: calc(var(--header-bar-height) + 20px) var(--padding);
+	padding-inline: var(--padding);
+
+	&::before {
+		content: '';
+		position: absolute;
+		inline-size: 100%;
+		block-size: var(--header-bar-height);
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		background-color: var(--color-primary);
+		border-start-start-radius: var(--border-radius);
+		border-start-end-radius: var(--border-radius);
+	}
+}
+
+.ui-modal-theme-default {
+	&::before {
+		background-color: var(--color-gray);
+	}
+}
+
+.ui-modal-theme-primary {
+	&::before {
+		background-color: var(--color-primary);
+	}
+}
+
+.ui-modal-theme-success {
+	&::before {
+		background-color: var(--color-success);
+	}
+}
+
+.ui-modal-theme-warning {
+	&::before {
+		background-color: var(--color-warning);
+	}
+}
+
+.ui-modal-theme-error {
+	&::before {
+		background-color: var(--color-error);
+	}
+}
+
+.ui-modal-footer {
+	display: flex;
+	padding-block-start: 20px;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 16px;
+}

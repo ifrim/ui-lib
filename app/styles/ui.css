@@ -1,0 +1,9 @@
+@import '../../styles/vars.css';
+@import './reset.css';
+@import '../../styles/fonts.css';
+@import '../../styles/typography.css';
+@import '../../styles/forms.css';
+
+.ui-button + .ui-button {
+	margin-inline-start: 10px;
+}

@@ -1,0 +1,7 @@
+.ui-multiselect-disabled .ui-multiselect-comp {
+	cursor: not-allowed;
+}
+
+.ui-multiselect-disabled .ui-multiselect-value {
+	pointer-events: none;
+}

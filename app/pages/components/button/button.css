@@ -1,0 +1,9 @@
+.section-content-button-list {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+
+	.ui-button + .ui-button {
+		margin-inline-start: 0;
+	}
+}

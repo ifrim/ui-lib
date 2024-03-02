@@ -1,0 +1,48 @@
+.ui-multiselect-value {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	flex-wrap: wrap;
+	inline-size: 100%;
+	min-block-size: var(--form-element-height);
+	border-radius: var(--border-radius);
+	background-color: white;
+	color: black;
+	border: var(--form-element-border-width) solid var(--color-gray-light);
+	font-size: var(--font-size-body-1);
+	padding-inline: var(--form-element-padding-h) calc(var(--form-element-padding-h) + 20px);
+	padding-block: 5px;
+
+	&.has-placeholder {
+		color: var(--color-gray);
+	}
+
+	.ui-icon.fa-angle-down {
+		position: absolute;
+		inset-inline-end: 8px;
+		color: var(--color-gray-light);
+	}
+
+	.ui-multiselect-error & {
+		border-color: var(--color-error);
+		outline: none;
+	}
+
+	.ui-multiselect-disabled & {
+		background-color: var(--color-gray-light);
+		opacity: 0.5;
+
+		.ui-icon.fa-angle-down {
+			color: var(--color-gray);
+		}
+	}
+}
+
+.ui-multiselect-value-input {
+	min-inline-size: 30px;
+	outline: none;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+}

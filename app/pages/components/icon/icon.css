@@ -1,0 +1,5 @@
+.icon-page {
+	i + i {
+		margin-inline-start: 10px;
+	}
+}

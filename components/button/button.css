@@ -1,0 +1,154 @@
+.ui-button {
+	cursor: pointer;
+	color: white;
+	background-color: var(--color-gray);
+	border-radius: var(--border-radius);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&.size-sm {
+		block-size: 24px;
+		padding-inline: 10px;
+		font-size: var(--font-size-body-2);
+	}
+
+	&.size-md {
+		block-size: 32px;
+		padding-inline: 12px;
+		font-size: var(--font-size-body-1);
+	}
+
+	&.size-lg {
+		block-size: 40px;
+		padding-inline: 16px;
+		font-size: var(--font-size-h5);
+	}
+
+	&:not(:disabled):focus {
+		outline: 1px dotted gray;
+	}
+
+	&.theme-default {
+		background-color: var(--color-gray);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-gray-dark);
+
+				&.theme-outline {
+					background-color: var(--color-gray);
+				}
+			}
+		}
+	}
+
+	&.theme-white {
+		background-color: white;
+		color: black;
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-gray-light);
+
+				&.theme-outline {
+					background-color: white;
+				}
+			}
+		}
+	}
+
+	&.theme-primary {
+		background-color: var(--color-primary);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-primary-dark);
+
+				&.theme-outline {
+					background-color: var(--color-primary);
+				}
+			}
+		}
+	}
+
+	&.theme-secondary {
+		background-color: var(--color-secondary);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-secondary-dark);
+
+				&.theme-outline {
+					background-color: var(--color-secondary);
+				}
+			}
+		}
+	}
+
+	&.theme-error {
+		background-color: var(--color-error);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-error-dark);
+
+				&.theme-outline {
+					background-color: var(--color-error);
+				}
+			}
+		}
+	}
+
+	&.theme-warning {
+		background-color: var(--color-warning);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-warning-dark);
+
+				&.theme-outline {
+					background-color: var(--color-warning);
+				}
+			}
+		}
+	}
+
+	&.theme-success {
+		background-color: var(--color-success);
+
+		&:not(:disabled) {
+			&:hover,
+			&:active {
+				background-color: var(--color-success-dark);
+
+				&.theme-outline {
+					background-color: var(--color-success);
+				}
+			}
+		}
+	}
+
+	&.theme-outline {
+	  background-color: transparent;
+	  color: var(--color-primary-dark);
+
+	  &:not(:disabled) {
+	    &:hover,
+	    &:active {
+	      color: white;
+	    }
+	  }
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}

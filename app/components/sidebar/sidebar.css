@@ -1,0 +1,48 @@
+.app-sidebar {
+	background-color: var(--color-primary);
+	color: white;
+
+	> h3 {
+		color: var(--color-primary-light);
+		text-align: center;
+	}
+
+	ul {
+		padding-inline-start: 20px;
+	}
+
+	li.selected {
+		position: relative;
+
+		::before {
+			content: '-';
+			position: absolute;
+			inset-inline-start: -20px;
+		}
+	}
+
+	li,
+	a {
+		color: white;
+	}
+
+	> nav {
+		padding-block: 0;
+		padding-inline: 20px;
+
+		> ul {
+			padding-inline-start: 0;
+		}
+
+		li > ul {
+			padding-block-end: 10px;
+		}
+	}
+
+	.section-title {
+		display: flex;
+		block-size: 30px;
+		align-items: center;
+		font-weight: bold;
+	}
+}

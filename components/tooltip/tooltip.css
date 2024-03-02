@@ -1,0 +1,36 @@
+.ui-tooltip {
+	--ui-tooltip-main-color: var(--color-gray-light);
+	--ui-tooltip-text-color: var(--color-gray-dark);
+
+	display: flex;
+	align-items: center;
+	color: var(--ui-tooltip-text-color);
+	background-color: var(--ui-tooltip-main-color);
+	border-radius: var(--border-radius);
+	box-shadow: 0 8px 15px -6px rgba(0 84 80 / 33%);
+	padding-block: 8px;
+	padding-inline: 12px;
+
+	&.theme-success {
+		--ui-tooltip-main-color: var(--color-success-light);
+		--ui-tooltip-text-color: var(--color-success-dark);
+	}
+
+	&.theme-warning {
+		--ui-tooltip-main-color: var(--color-warning-light);
+		--ui-tooltip-text-color: var(--color-warning-dark);
+	}
+
+	&.theme-error {
+		--ui-tooltip-main-color: var(--color-error-light);
+		--ui-tooltip-text-color: var(--color-error-dark);
+	}
+}
+
+.ui-tooltip-wrapper {
+	display: inline-block;
+}
+
+.ui-tooltip-floating-container {
+	overflow: visible;
+}

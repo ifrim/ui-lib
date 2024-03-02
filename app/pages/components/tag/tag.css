@@ -1,0 +1,5 @@
+.tag-page {
+	.ui-tag + .ui-tag {
+		margin-inline-start: 10px;
+	}
+}

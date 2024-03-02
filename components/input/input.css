@@ -1,0 +1,73 @@
+.ui-input {
+	--input-height: var(--form-element-height);
+
+	inline-size: 100%;
+
+	input {
+		inline-size: 100%;
+		block-size: var(--input-height);
+		border-radius: var(--border-radius);
+		color: black;
+		border: var(--form-element-border-width) solid var(--color-gray-light);
+		font-size: var(--font-size-input);
+		padding-inline: var(--form-element-padding-h);
+
+		&:active,
+		&:focus {
+			border-color: var(--color-secondary);
+			outline: none;
+		}
+
+		&::placeholder {
+			color: var(--color-gray);
+		}
+	}
+
+	.ui-input-error {
+		input {
+			border-color: var(--color-error);
+		}
+	}
+
+	.ui-input-disabled {
+		input {
+			cursor: not-allowed;
+			opacity: 0.5;
+			background-color: var(--color-gray-light);
+		}
+	}
+
+	&.has-icon-left {
+		.input-wrapper {
+			position: relative;
+
+			input {
+				padding-inline-start: var(--input-height);
+			}
+
+			.ui-icon:first-child {
+				--offset: calc(var(--input-height) / 4);
+				--size: calc(var(--input-height) / 2);
+
+				position: absolute;
+				inset-inline-start: var(--offset);
+				inset-block-start: var(--offset);
+				inline-size: var(--size);
+				block-size: var(--size);
+			}
+		}
+	}
+
+	&.has-icon-right {
+		.ui-icon:last-child {
+			--offset: calc(var(--input-height) / 4);
+			--size: calc(var(--input-height) / 2);
+
+			position: absolute;
+			inset-inline-end: var(--offset);
+			inset-block-start: var(--offset);
+			inline-size: var(--size);
+			block-size: var(--size);
+		}
+	}
+}

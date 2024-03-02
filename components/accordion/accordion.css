@@ -1,0 +1,33 @@
+.ui-accordion {
+	.ui-accordion-item {
+		.ui-accordion-item-header {
+			display: flex;
+			align-items: center;
+
+			.ui-accordion-item-header-content {
+				flex-grow: 1;
+
+				&.is-trigger {
+					cursor: pointer;
+				}
+			}
+
+			.ui-accordion-item-header-trigger {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				align-self: stretch;
+				inline-size: 40px;
+				cursor: pointer;
+
+				.trigger-icon {
+					transition: all 0.3s ease-in;
+
+					&.is-opened {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+}

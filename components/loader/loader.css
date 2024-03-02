@@ -1,0 +1,36 @@
+.ui-loader {
+	inline-size: 100%;
+	text-align: center;
+
+	&.size-sm {
+		svg {
+			block-size: 30px;
+		}
+	}
+
+	&.size-md {
+		svg {
+			block-size: 50px;
+		}
+	}
+
+	&.size-lg {
+		svg {
+			block-size: 80px;
+		}
+	}
+}
+
+.ui-loader-overlay {
+	background-color: var(--color-primary);
+	opacity: 0.4;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	> .ui-loader {
+		inline-size: auto;
+	}
+}

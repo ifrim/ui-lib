@@ -1,0 +1,81 @@
+.ui-tag {
+	--tag-color: var(--color-gray);
+
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	border: var(--form-element-border-width) solid var(--tag-color);
+	background-color: var(--tag-color);
+	border-radius: 15px / 50%;
+	padding-inline: 10px;
+	color: white;
+
+	&.size-sm.has-close {
+		padding-inline-end: 25px;
+	}
+
+	&.size-md.has-close {
+		padding-inline-end: 30px;
+	}
+
+	&.size-lg.has-close {
+		padding-inline-end: 35px;
+	}
+
+	&.size-sm {
+		block-size: 24px;
+		font-size: var(--font-size-body-2);
+		border-radius: 15px;
+	}
+
+	&.size-md {
+		block-size: 30px;
+		font-size: var(--font-size-body-1);
+		border-radius: 20px;
+	}
+
+	&.size-lg {
+		block-size: 40px;
+		font-size: var(--font-size-h5);
+		border-radius: 22px;
+	}
+
+	&.theme-success {
+		--tag-color: var(--color-success);
+	}
+
+	&.theme-error {
+		--tag-color: var(--color-error);
+	}
+
+	&.theme-warning {
+		--tag-color: var(--color-warning);
+	}
+
+	&.theme-outline {
+		background-color: transparent;
+		color: unset;
+	}
+
+	&.theme-square {
+		border-radius: var(--border-radius);
+	}
+
+	.ui-icon {
+		position: absolute;
+		inset-inline-end: 10px;
+		cursor: pointer;
+	}
+
+	&.size-sm .ui-icon {
+		inset-block-start: calc(50% - 6px);
+	}
+
+	&.size-md .ui-icon {
+		inset-block-start: calc(50% - 7px);
+	}
+
+	&.size-lg .ui-icon {
+		inset-block-start: calc(50% - 9px);
+	}
+}

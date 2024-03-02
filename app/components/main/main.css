@@ -1,0 +1,33 @@
+.app-main-wrapper {
+	overflow: auto;
+	flex-grow: 1;
+}
+
+.app-main {
+	margin-inline: auto;
+
+	.page {
+		padding-block-end: 40px;
+
+		header {
+			h1 {
+				color: var(--color-primary);
+				border-block-end: 1px solid gray;
+			}
+		}
+
+		.page-body {
+			padding-block-start: 20px;
+
+			section {
+				> h3 {
+					text-decoration: underline;
+				}
+
+				+ section {
+					margin-block-start: 40px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.ui-message {
+	border: var(--form-element-border-width) solid var(--color-gray-dark);
+	background-color: var(--color-gray-light);
+	border-radius: var(--border-radius);
+	padding: 20px;
+
+	&.theme-success {
+		border-color: var(--color-success-dark);
+		background-color: var(--color-success-light);
+	}
+
+	&.theme-error {
+		border-color: var(--color-error-dark);
+		background-color: var(--color-error-light);
+	}
+
+	&.theme-warning {
+		border-color: var(--color-warning-dark);
+		background-color: var(--color-warning-light);
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ui-lib",
+  "version": "1.0.0",
+  "description": "ui library",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config ./app/webpack.config.js --server-type https"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "clean-webpack-plugin": "4.0.0",
+    "css-loader": "^6.10.0",
+    "esbuild-loader": "^4.0.3",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "react": "^18.2.0",
+    "react-code-blocks": "0.1.6",
+    "react-datepicker": "^6.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.2",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

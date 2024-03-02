@@ -1,0 +1,23 @@
+.floating-container {
+	--floating-container-pointer-size: 11px;
+
+	position: fixed;
+	inset-block-start: -9999px;
+	overflow: auto;
+	z-index: 1000;
+}
+
+.floating-container__dropdown-pointer {
+	block-size: var(--floating-container-pointer-size);
+	inline-size: var(--floating-container-pointer-size);
+	position: absolute;
+	background-color: inherit;
+	inset-block-start: calc(-1 * var(--floating-container-pointer-size));
+	inset-inline-start: 0;
+	rotate: 45deg;
+	transform-origin: 0 100%;
+}
+
+.floating-container__content-wrapper {
+	block-size: 100%;
+}

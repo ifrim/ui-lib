@@ -1,0 +1,10 @@
+.ui-collapsible {
+	transition: all 0.3s ease-in;
+	block-size: auto;
+	overflow: hidden;
+
+	&.collapsed {
+		block-size: 0;
+		padding-block: 0;
+	}
+}

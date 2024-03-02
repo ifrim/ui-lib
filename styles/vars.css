@@ -1,0 +1,61 @@
+:root {
+	--ui-color-primary: #3448f0;
+	--ui-color-secondary: #00abfa;
+	--ui-color-green: #06d188;
+	--ui-color-orange: #f6931e;
+	--ui-color-red: #f54c3e;
+	--ui-color-gray: #999ca0;
+	--ui-color-gray-light: #ebebeb;
+	--ui-color-gray-dark: #4e5867;
+
+	--color-primary: var(--ui-color-primary);
+	--color-primary-light: color-mix(in srgb, var(--ui-color-primary), white 60%);
+	--color-primary-dark: color-mix(in srgb, var(--ui-color-primary), black 60%);
+	--color-secondary: var(--ui-color-secondary);
+	--color-secondary-light: color-mix(in srgb, var(--ui-color-secondary), white 60%);
+	--color-secondary-dark: color-mix(in srgb, var(--ui-color-secondary), black 60%);
+	--color-error: var(--ui-color-red);
+	--color-error-light: color-mix(in srgb, var(--ui-color-red), white 60%);
+	--color-error-dark: color-mix(in srgb, var(--ui-color-red), black 60%);
+	--color-warning: var(--ui-color-orange);
+	--color-warning-light: color-mix(in srgb, var(--ui-color-orange), white 60%);
+	--color-warning-dark: color-mix(in srgb, var(--ui-color-orange), black 60%);
+	--color-success: var(--ui-color-green);
+	--color-success-light: color-mix(in srgb, var(--ui-color-green), white 60%);
+	--color-success-dark: color-mix(in srgb, var(--ui-color-green), black 60%);
+	--color-gray: var(--ui-color-gray);
+	--color-gray-light: var(--ui-color-gray-light);
+	--color-gray-dark: var(--ui-color-gray-dark);
+
+	--font-family-base: 'Inter';
+	--font-family-title: 'Inter';
+	--base-line-height: 1.5;
+	--text-color: black;
+
+	--font-size-h1: 48px;
+	--line-height-h1: var(--base-line-height);
+	--font-size-h2: 40px;
+	--line-height-h2: var(--base-line-height);
+	--font-size-h3: 30px;
+	--line-height-h3: var(--base-line-height);
+	--font-size-h4: 25px;
+	--line-height-h4: var(--base-line-height);
+	--font-size-h5: 20px;
+	--line-height-h5: var(--base-line-height);
+	--font-size-h6: 16px;
+	--line-height-h6: var(--base-line-height);
+	--font-size-body-1: 14px;
+	--line-height-body-1: var(--base-line-height);
+	--font-size-body-2: 12px;
+	--line-height-body-2: var(--base-line-height);
+	--font-size-input: 12px;
+	--font-size-label: 12px;
+
+	--border-radius: 8px;
+
+	--form-space-between-elements: 10px;
+	--form-element-height: 32px;
+	--form-element-padding-h: 8px;
+	--form-element-padding-v: 8px;
+	--form-element-border-width: 1px;
+}
