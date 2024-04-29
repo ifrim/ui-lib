@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Checkbox, DatePicker, Dropdown, FileInput, Input, Radio, Textarea } from './components';
 
@@ -28,6 +28,10 @@ export let wrapper = Component => ({ field, form, ...properties }) => { // eslin
 	let error = typeof formError === 'string' ? formError : '';
 
 	if (form.status?.disabled) properties.disabled = true;
+
+	useEffect(() => {
+		if (field.value !== value) setValue(field.value);
+	}, [value, field.value]);
 
 	return (
 		<Component
