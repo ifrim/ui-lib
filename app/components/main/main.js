@@ -4,8 +4,11 @@ import { Outlet, Routes, Route } from 'react-router-dom';
 import Root from '../../pages/root/root';
 import Typography from '../../pages/typography/typography';
 import Colors from '../../pages/colors/colors';
+import PageAccordion from '../../pages/components/accordion/accordion';
 import PageButton from '../../pages/components/button/button';
+import PageButtonGroup from '../../pages/components/button-group/button-group';
 import PageCheckbox from '../../pages/components/checkbox/checkbox';
+import PageCollapsible from '../../pages/components/collapsible/collapsible';
 import PageDatepicker from '../../pages/components/datepicker/datepicker';
 import PageDropdown from '../../pages/components/dropdown/dropdown';
 import PageFileInput from '../../pages/components/file-input/file-input';
@@ -33,8 +36,11 @@ function Main() {
 						<Route index element={<Root />} />
 						<Route path="typography" element={<Typography />} />
 						<Route path="colors" element={<Colors />} />
+						<Route path="components/accordion" element={<PageAccordion />} />
 						<Route path="components/button" element={<PageButton />} />
+						<Route path="components/button-group" element={<PageButtonGroup />} />
 						<Route path="components/checkbox" element={<PageCheckbox />} />
+						<Route path="components/collapsible" element={<PageCollapsible />} />
 						<Route path="components/datepicker" element={<PageDatepicker />} />
 						<Route path="components/dropdown" element={<PageDropdown />} />
 						<Route path="components/file-input" element={<PageFileInput />} />
