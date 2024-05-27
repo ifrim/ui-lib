@@ -122,6 +122,33 @@ let [dropdownValue, setDropdownValue] = useState(items[1]);
 						/>
 					</div>
 				</section>
+
+				<section>
+					<h3>List items can have custom classes</h3>
+					<div className="section-content">
+						<Dropdown
+							label="Pick Something"
+							value={dropdownValue}
+							items={items.map(i => ({ ...i, className: `item-${i.id}` }))}
+							onChange={setDropdownValue}
+						/>
+						<br /><br />
+						<CodeBlock
+							text={
+				`let items = [{id: 1, name: 'Item 1'}, {id: 2, name: 'Item 2'}];
+				let [dropdownValue, setDropdownValue] = useState(items[1]);
+
+				<Dropdown
+				label="Pick Something"
+				value={dropdownValue}
+				items={items}
+				onChange={setDropdownValue}
+				disabled
+				/>`}
+							language="jsx"
+						/>
+					</div>
+				</section>
 			</div>
 		</div>
 	);

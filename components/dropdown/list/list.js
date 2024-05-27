@@ -21,6 +21,7 @@ function List({ value, items, sendMessage }) {
 	function getItemClasses(item) {
 		return [
 			'ui-dropdown-list-item',
+			item.className,
 			value.id === item.id && 'selected'
 		].filter(Boolean);
 	}
