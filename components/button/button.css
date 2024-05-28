@@ -1,7 +1,7 @@
 .ui-button {
 	cursor: pointer;
 	color: white;
-	background-color: var(--color-gray);
+	background-color: var(--color-primary-background);
 	border-radius: var(--border-radius);
 	display: flex;
 	align-items: center;

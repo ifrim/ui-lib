@@ -1,6 +1,6 @@
 .ui-message {
-	border: var(--form-element-border-width) solid var(--color-gray-dark);
-	background-color: var(--color-gray-light);
+	border: var(--form-element-border-width) solid var(--color-primary-border);
+	background-color: var(--color-primary-background);
 	border-radius: var(--border-radius);
 	padding: 20px;
 

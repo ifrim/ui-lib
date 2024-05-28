@@ -9,7 +9,7 @@
 	inline-size: var(--ui-toast-width);
 
 	.ui-toast {
-		--ui-toast-main-color: var(--color-gray-light);
+		--ui-toast-main-color: var(--color-primary-background);
 
 		pointer-events: auto;
 		position: relative;

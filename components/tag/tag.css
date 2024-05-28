@@ -1,5 +1,5 @@
 .ui-tag {
-	--tag-color: var(--color-gray);
+	--tag-color: var(--color-primary);
 
 	position: relative;
 	display: inline-flex;

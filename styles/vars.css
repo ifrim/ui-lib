@@ -3,7 +3,7 @@
 	--ui-color-secondary: #00abfa;
 	--ui-color-green: #06d188;
 	--ui-color-orange: #f6931e;
-	--ui-color-red: #f54c3e;
+	--ui-color-red: #f00;
 	--ui-color-gray: #999ca0;
 	--ui-color-gray-light: #ebebeb;
 	--ui-color-gray-dark: #4e5867;
@@ -26,6 +26,9 @@
 	--color-gray: var(--ui-color-gray);
 	--color-gray-light: var(--ui-color-gray-light);
 	--color-gray-dark: var(--ui-color-gray-dark);
+
+	--color-primary-border: color-mix(in srgb, var(--color-primary-light), white 40%);
+	--color-primary-background: color-mix(in srgb, var(--color-primary-light), white 80%);
 
 	--font-family-base: 'Inter';
 	--font-family-title: 'Inter';
